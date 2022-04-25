@@ -1,0 +1,1 @@
+"./x64/Debug/Simple Ray Tracing Renderer.exe" >> ./image.ppm
