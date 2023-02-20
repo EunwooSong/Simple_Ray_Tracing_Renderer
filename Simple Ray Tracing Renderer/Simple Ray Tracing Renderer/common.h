@@ -4,6 +4,7 @@
 #include <memory>
 #include <cstdlib>
 #include <random>
+#include <thread>
 
 // Usings
 
@@ -11,6 +12,7 @@ using std::shared_ptr;
 using std::make_shared;
 using std::sqrt;
 using real = double;
+using std::thread;
 
 // Constants
 
@@ -45,3 +47,9 @@ inline double clamp(double x, double min, double max) {
 
 #include "ray.h"
 #include "vec3.h"
+
+// System Define
+#define WIDTH 1280
+#define RENDER_THREAD 16
+
+int simple_left = 720;
